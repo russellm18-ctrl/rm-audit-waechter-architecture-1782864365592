@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{COMPANY_NAME}} — Visual Audit</title>
+  <title>Waechter Architecture — Visual Audit</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -221,14 +221,14 @@
 
   <section class="hero">
     <p class="hero-eyebrow">// Visual Intelligence Report</p>
-    <h1 class="hero-company">{{COMPANY_NAME}}</h1>
+    <h1 class="hero-company">Waechter Architecture</h1>
     <p class="hero-sub">Prepared by Russell Moore &nbsp;·&nbsp; <span id="audit-date"></span></p>
   </section>
 
   <section class="findings">
     <p class="section-label">// Findings</p>
     <div class="audit-block">
-      {{AUDIT_RESULTS}}
+      <ul><li>WHAT'S WORKING: Your Organization schema is genuinely solid — valid, crawls clean, zero errors. Firm name, address, geo coordinates, founder credentials, service types, awards, and citations to ArchDaily, Architizer, and Archinect are all machine-readable right now. Your individual project pages follow the same discipline: Golden Gate Heights, Tower House, and the rest each carry a full written record of location, completion date, every award, and every press mention, tied specifically to that project. Someone on your team set this up correctly, and it's rare — most firms your size have none of this.</li><li>WHERE THE GAP ACTUALLY IS: All of that structure stops at the entity and page level. None of it extends to the individual project as a discrete, citable object, and none of it extends to the images themselves. We pulled the EXIF data directly from a live Golden Gate Heights image on your site: the Exif and GPS fields are both completely empty. No camera data, no capture date, no location — nothing but a generic color profile stamped on export. That's standard behavior for most CDN pipelines, so it's not a red flag on its own. But combined with the missing project-level schema, it means a search engine or an AI assistant has no way to connect "Golden Gate Heights renovation" to San Francisco, to the Dwell feature, or to the address on the ground. The content exists. The connective tissue that makes it searchable and citable doesn't.</li><li>WHAT THIS IS COSTING YOU RIGHT NOW: Firms at your tier — Forbes Top 200 recognition, a Dwell feature, national press — are the exact firms high-intent searches are built to surface. "Residential architect Golden Gate Heights San Francisco" is a query your project should win outright. Right now it can't, because nothing on the page or in the image tells a search engine that project and that location belong together. Every month this stays unresolved is a month those queries go to firms with weaker portfolios but better-structured pages. This isn't a future risk. It's active, ongoing traffic loss on searches you should already own.</li><li>THE FIX, SCOPED TO WHAT'S MISSING: This isn't a rebuild — it's closing the specific gap between the content you've already produced and the infrastructure that makes it findable. Two things: first, CreativeWork schema on each project page connecting project name, location, typology, and award/press history into a structured record. Second, a metadata protocol on delivery — geotagged EXIF, descriptive alt-text, structured captions — applied to new photography going forward, and retroactively to your highest-value existing assets like Golden Gate Heights. The design work and the writing are done. This is the layer that turns them into search-indexed, citable assets instead of well-written pages nothing outside your own site can parse.</li></ul>
     </div>
   </section>
 
